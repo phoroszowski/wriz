@@ -1,0 +1,23 @@
+{
+  "name": "wriz",
+  "version": "1.0.0",
+  "description": "server for old timey radio controller",
+  "main": "cmd.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "raspberrypi",
+    "rss",
+    "radio",
+    "podcasts"
+  ],
+  "author": "Peter Horoszowski",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.2.0",
+    "commander": "^10.0.0",
+    "rss-parser": "^3.12.0",
+    "vlc-client": "^1.1.1"
+  }
+}
