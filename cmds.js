@@ -2,6 +2,15 @@ const { program } = require('commander');
 var mpd = require('mpd');
 const gpio = require('./lib/gpio.js')
 let mpdCmds = mpd.cmd;
+let Wriz = require('./lib/wriz.js').Wriz;
+
+program.command('start')
+    .action(() => {
+        let wriz = new Wriz();
+        wriz.start();
+        
+    }
+);
 
 
 program.command('getFeed')
