@@ -7,6 +7,24 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "start WRIZ Radio",
+            "runtimeExecutable": "/home/phoroszo/.config/nvm/versions/node/v12.22.12/bin/node",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/cmds.js",
+            "env": {
+                "LEVEL": "debug"
+              },
+            "args": [
+                "start"
+                
+            ],
+            "outputCapture": "std"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "test mpd",
             "runtimeExecutable": "/home/phoroszo/.config/nvm/versions/node/v12.22.12/bin/node",
             "skipFiles": [
